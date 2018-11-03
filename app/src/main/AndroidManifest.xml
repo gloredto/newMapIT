@@ -22,7 +22,9 @@
         <activity android:name=".MapsActivity" />
         <activity android:name=".StatusActivity" />
         <activity android:name=".AboutActivity" />
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".UpdateProfileActivity" />
+        <activity android:name=".UpdatePasswordActivity"></activity>
     </application>
 
 </manifest>
