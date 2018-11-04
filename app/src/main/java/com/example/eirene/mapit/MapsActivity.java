@@ -41,10 +41,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private FusedLocationProviderClient mFusedLocationProviderClient;
 
 
-    //private FirebaseAuth firebaseAuth;
-    //private DatabaseReference mDatabase;
+    private FirebaseAuth firebaseAuth;
+    private DatabaseReference mDatabase;
 
-    //private ArrayList<Double> userLatitude, userLongitude;
+    private ArrayList<Double> userLatitude, userLongitude, userStatus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
