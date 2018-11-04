@@ -7,10 +7,39 @@ public class UserProfile {
     public String userBornWhere;
     public String userBornWhen;
     public String userAge;
+    public String userStatus;
+    public Double userLatitude;
+    public Double userLongitude;
 
     public UserProfile(){
 
     }
+
+    public UserProfile(Double userLatitude, Double userLongitude, String userStatus){
+        this.userLatitude = userLatitude;
+        this.userLongitude = userLongitude;
+        this.userStatus = userStatus;
+    }
+
+    public Double getUserLatitude() {
+        return userLatitude;
+    }
+
+    public void setUserLatitude(Double userLatitude) {
+        this.userLatitude = userLatitude;
+    }
+
+    public Double getUserLongitude() {
+        return userLongitude;
+    }
+
+    public void setUserLongitude(Double userLongitude) {
+        this.userLongitude = userLongitude;
+    }
+
+    public String getUserStatus() { return userStatus; }
+
+    public void  setUserStatus(String userStatus) { this.userStatus = userStatus; }
 
     public UserProfile(String userEmail, String userName, String userBornWhere, String userBornWhen, String userAge) {
         this.userEmail = userEmail;

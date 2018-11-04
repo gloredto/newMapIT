@@ -113,6 +113,10 @@ public class ProfileActivity extends AppCompatActivity {
         startActivity(new Intent(ProfileActivity.this, MainActivity.class));
     }
 
+    private void Status(){
+        startActivity(new Intent(ProfileActivity.this, StatusActivity.class));
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
@@ -154,6 +158,10 @@ public class ProfileActivity extends AppCompatActivity {
             break;
             case R.id.homeMenu:{
                 Home();
+            }
+            break;
+            case R.id.statusMenu:{
+                Status();
             }
         }
         return super.onOptionsItemSelected(item);
