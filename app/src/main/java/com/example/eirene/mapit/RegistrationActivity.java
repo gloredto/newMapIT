@@ -179,10 +179,10 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(RegistrationActivity.this, "Upload Failed!", Toast.LENGTH_SHORT).show();
             }
-        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+        }).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
             @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Toast.makeText(RegistrationActivity.this, "Upload Successful!", Toast.LENGTH_SHORT).show();
+            public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
+                Toast.makeText(RegistrationActivity.this, "Upload successful!", Toast.LENGTH_SHORT).show();
             }
         });
         UserProfile userProfile = new UserProfile(email, name, bornwhere, bornwhen, age);
